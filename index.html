@@ -1,3 +1,6 @@
+<?php
+include "php/connection.php"
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-Register</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
-    rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
 </head>
 <body>
     <main>
@@ -28,17 +30,17 @@
                 <!--Formulario de Login-->
                 <form action="#" class="formulario__login">
                     <h2>Iniciar Sesión</h2>
-                    <input type="text" placeholder="Correo Electrónico">
-                    <input type="password" placeholder="Contraseña">
+                    <input type="text" name="email" placeholder="Correo Electrónico">
+                    <input type="password" name="password" placeholder="Contraseña">
                     <button>Entrar</button>
                 </form>
                 <!--Formulario de register-->
                 <form action="#" class="formulario__register">
                     <h2>Registrarse</h2>
-                    <input type="text" placeholder="Nombre Completo">
-                    <input type="text" placeholder="Correo Electrónico">
-                    <input type="text" placeholder="Usuario">
-                    <input type="password" placeholder="Contraseña">
+                    <input type="text" name="nombre" placeholder="Nombre Completo">
+                    <input type="text" name="correo" placeholder="Correo Electrónico">
+                    <input type="text" name="user" placeholder="Usuario">
+                    <input type="password" name="contrasena" placeholder="Contraseña">
                     <button>Registrarse</button>
                 </form>
             </div>
